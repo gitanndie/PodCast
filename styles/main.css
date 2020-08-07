@@ -14,40 +14,33 @@ html {
     
 }
 
-
 header {
+    position: fixed;
     width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0.000001px;
     background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
     flex-wrap: row;
-    padding: 10px 0px;
-    z-index: 3;
+    padding: 10px;
+    z-index: 1;
 }
 
 header .nav-bar {
     display: flex;
-    align-items: flex-end;
     justify-content: flex-end;
-    position: 0px 0px;
-    size: 1440px 80px;
+    width: 100%;
     opacity: 100%;
 }
 
 #logo {
-    margin-right: 1000px;
+    margin-right: 1100px;
 }
 
 header .nav-bar ul li {
     display: inline-flex;
     justify-content: flex-end;
-    position: 858px 26px;
-    size: 87px 28px;
     opacity: 100%;
     color: #060A24 100%;
     size: 16px;
@@ -75,11 +68,7 @@ nav li a:hover {
     font-family: 'IBM Plex Mono', monospace;
     color: black;
     width: 100%;
-    padding: 80px;
-    padding-top: 0;
-    margin-top: 29px;
-    letter-spacing: 0;
-    padding-bottom: 0;
+    padding: 70px;
     margin-bottom: 24px;
 }
 
@@ -92,37 +81,17 @@ nav li a:hover {
     margin-top: 56px;
     margin-bottom: 5px;
     height: 56px;
+    cursor: pointer;
 
 }
 
 .pagina-hello button:hover {
+    cursor: pointer;
     background-color: linear-gradient(aqua, blue);
-}
-
-.pagina-hello p {
-    margin-bottom: 0;
-    margin-top: 0;
 }
 
 #punto {
     color: blueviolet;
-}
-
-#portal {
-    margin-top: 40px;
-    size: 628px 48px;
-    position: 200px 248px;
-    opacity: 100%;
-    font-family: 'IBM Plex Mono', monospace;
-    color: #060A24 100%;
-    size: 16px;
-    letter-spacing: 0px 24px;
-
-}
-
-.pagina-hello span .parrafo {
-    margin-top: 10px;
-    size: -20px;
 }
 
 .page-button {
@@ -137,11 +106,10 @@ nav li a:hover {
 }
 
 .skewed {
-    margin-top: 100px;
-    position: 0px 449px;
+    margin-top: 80px;
     width: 100%;
-    padding: 70px;
-    height: 30%;
+    padding: 5px;
+    height: 10%;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     z-index: 0;
     transform: skewY(-5deg);
@@ -151,10 +119,9 @@ nav li a:hover {
 .card-title {
     font-family: 'IBM Plex Mono', monospace;
     color: #FFFFFF;
-    letter-spacing: 0;
     position: absolute;
-    top: 6rem;
-    left: 16rem;
+    top: 2rem;
+    left: 6rem;
     transform: skewY(5deg);
     color: white;
     font-size: 2rem;
@@ -162,73 +129,73 @@ nav li a:hover {
 
 .spoty {
     position: relative;
-    position: 100px 723px;
+    /* position: 100px 723px;
     text-align: center;
     padding: 10rem 2rem;
-    size: 584px 232px;
-    transform: skewY(5deg);
+    size: 584px 232px; */
+   /*  transform: skewY(5deg);
     transform-origin: top left;
     width: 0;
-
+ */
 }
 
 .spoty-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 10rem;
     width: 200%;
     max-width: 1280px;
     margin: 200px;
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
     transform: skewY(5deg);
 
 }
 
 .spoty-image {
-    height: calc(100% - 6.8rem);
+    /* height: calc(100% - 6.8rem); */
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .card-title-phone {
     position: relative;
-    position: 200px 1323px;
-    size: 457.6px 660px;
-    top: -9rem;
-    left: 12rem;
+    /* position: 200px 1323px; */
+    /* size: 457.6px 660px; */
+    top: -4rem;
+    left: 8rem;
 }
 
 .card-title-donde {
     position: relative;
-    position: 720px 1512px;
-    top: -51rem;
-    left: 50rem;
+    /* position: 720px 1512px; */
+    top: -45rem;
+    left: 45rem;
 }
 
 .card-title-donde h1 {
-    size: 399px 62px;
+    /* size: 399px 62px; */
     opacity: 100%;
     font-family: 'IBM Plex Mono';
     color: #060A24 100%;
     size: 48px;
-    border-spacing: 0px 62px;
+    /* border-spacing: 0px 62px; */
 }
 
 .card-title-parra .parra {
     position: relative;
-    position: 720px 1598px;
-    border-spacing: 0px 24px;
-    top: -50rem;
-    left: 50rem;
-    margin: 0;
+    /* position: 720px 1598px;
+    border-spacing: 0px 24px; */
+    top: -42rem;
+    left: 45rem;
+    /* margin: 0;
     padding: 0;
-    height: 0;
+    height: 0; */
 }
 
 .card-title-parra .parra p {
     font-family: 'IBM Plex Mono';
     font-size: 16px;
-    size: 464px 204px;
+   /*  size: 464px 204px; */
     opacity: 100%;
     color: #060A24;
     letter-spacing: 0;
@@ -237,14 +204,16 @@ nav li a:hover {
 }
 
 #entrevistas h1 {
+    position: relative;
+    top: -40px;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     font-family: 'IBM Plex Mono';
     font-size: 38px;
     color: #060A24;
     letter-spacing: 0;
-    size: 481px 62px;
+    /* size: 481px 62px; */
     /*  margin: 35px;
     margin-left: 128px; */
 }
@@ -254,23 +223,23 @@ nav li a:hover {
     flex-wrap: wrap;
     justify-content: stretch;
     position: relative;
-    position: 0px 2145px;
-    width: 140%;
-    size: 480px 364px;
+    /* position: 0px 2145px; */
+    width: 1750px;
+    /* size: 480px 364px; */
 }
 
 .invi-image {
     display: flex;
     position: relative;
-    width: 580px;
+    width: 530px;
 }
 
 #topicos {
     font-family: 'IBM Plex Mono';
     color: black;
     margin-top: 80px;
-    margin-left: 60px;
-    margin-bottom: 100px;
+    /* margin-left: 60px; */
+    /* margin-bottom: 100px; */
 }
 
 .sec-temas {
@@ -303,7 +272,7 @@ nav li a:hover {
 
 #novedades {
     margin-top: 100px;
-    position: 0px 449px;
+    /* position: 0px 449px; */
     width: 100%;
     padding: 250px;
     height: 30%;
@@ -314,7 +283,9 @@ nav li a:hover {
 }
 
 #novedades h4 {
-    display: flex;
+    position: relative;
+    top: -100px;
+    left: -150px;
     font-family: 'IBM Plex Mono';
     font-size: 48px;
     color: #FFFFFF;
@@ -325,20 +296,20 @@ nav li a:hover {
 
 .button {
     position: relative;
-    position: 547px 3610px;
-    size: 345px 56px;
+    /* position: 547px 3610px;
+    size: 345px 56px; */
     opacity: 100%;
     background: #00F3BB;
     border: transparent;
     font-family: 'IBM Plex Mono';
     font-size: 25px;
     color: #060A24;
-    letter-spacing: 0;
+    /* letter-spacing: 0; */
     text-align: center;
     line-height: 50px;
     padding: 10px;
     transform: skewY(5deg);
-    border-radius: 3%;
+    border-radius: 1%;
     left: 300px;
     top: 17px;
 }
@@ -357,5 +328,6 @@ footer {
 
 footer .iconos {
     position: relative;
-    left: 50px;
+    left: 1110px;
+    
 }
